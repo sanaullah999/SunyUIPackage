@@ -10,6 +10,10 @@ import SwiftUI
 
 public struct SunyButton: View {
     
+    public init(action: @escaping () -> Void) {
+        self.action = action
+    }
+    
     var action: () -> ()
     
     public var body: some View {
